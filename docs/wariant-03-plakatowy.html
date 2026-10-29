@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GoAudit 11 — Rajd Wikinga | 13–15 listopada 2026</title>
+<meta name="description" content="GoAudit 11 — Rajd Wikinga. Impreza kończąca sezon rajdowy w regionie. 13–15 listopada 2026, Dzierżoniów i Góry Sowie. Ponad 100 km odcinków specjalnych, runda Volvo Euro Cup. Zapisy: bgmsport.pl.">
+<meta name="theme-color" content="#efead9">
+<meta property="og:title" content="GoAudit 11 — Rajd Wikinga">
+<meta property="og:description" content="13–15 listopada 2026 · Dzierżoniów i Góry Sowie · 100+ km OS · runda Volvo Euro Cup">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/plakat.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2314110f'/%3E%3Ctext x='50' y='76' font-family='Arial Black,Arial' font-size='66' font-weight='900' text-anchor='middle' fill='%23f5c518'%3E11%3C/text%3E%3C/svg%3E">
+
+<style>
+/* ============================================================
+   GOAUDIT 11 — WERSJA PLAKATOWA (neo-brutalizm / konstruktywizm)
+   ============================================================ */
+:root{
+  --paper:#efead9;
+  --paper-2:#e5dfc9;
+  --paper-3:#d8d1b7;
+  --ink:#14110f;
+  --ink-2:#2a2521;
+  --red:#e03626;
+  --red-dk:#a8231a;
+  --yellow:#f5c518;
+  --blue:#1b4b8f;
+  --grey:#8d8677;
+
+  --f-display:"Anton","Archivo Black","Arial Narrow",Impact,sans-serif;
+  --f-body:"Archivo","Inter","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+
+  --gut:clamp(16px,3.4vw,44px);
+  --maxw:1400px;
+  --sec-y:clamp(56px,7vw,110px);
+  --rule:3px solid var(--ink);
+  --rule-thick:6px solid var(--ink);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden;scroll-behavior:smooth}
+body{padding-bottom:44px;
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.6;
+  overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--red);color:var(--paper)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+h1,h2,h3,h4{margin:0;font-family:var(--f-display);font-weight:400;letter-spacing:-.01em;line-height:.92;text-transform:uppercase}
+
+/* ── faktury ───────────────────────────────────────── */
+.halftone{
+  background-image:radial-gradient(circle at center,rgba(20,17,15,.20) 1.5px,transparent 1.6px);
+  background-size:8px 8px;
+}
+.stripes-red{background-image:repeating-linear-gradient(45deg,var(--red) 0 16px,var(--ink) 16px 32px)}
+.stripes-y{background-image:repeating-linear-gradient(45deg,var(--yellow) 0 16px,var(--ink) 16px 32px)}
+
+/* ── layout ────────────────────────────────────────── */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+section{position:relative}
+section[id]{scroll-margin-top:84px}
+.sec{padding:var(--sec-y) 0}
+.band{border-top:var(--rule-thick);border-bottom:var(--rule-thick)}
+
+/* ── nagłówek sekcji ───────────────────────────────── */
+.shead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(16px,3vw,50px);
+  align-items:end;margin-bottom:clamp(28px,4vw,54px)}
+@media(max-width:860px){.shead{grid-template-columns:1fr}}
+.shead-no{
+  font-family:var(--f-mono);font-weight:700;font-size:12px;letter-spacing:.28em;
+  background:var(--ink);color:var(--yellow);padding:5px 12px;display:inline-block;
+  margin-bottom:14px;text-transform:uppercase;
+}
+.shead h2{font-size:clamp(2.2rem,6.4vw,5rem)}
+.shead h2 em{font-style:normal;color:var(--red)}
+.shead p{margin:0;font-size:clamp(14px,1.4vw,17px);max-width:56ch;color:var(--ink-2)}
+.shead p b{color:var(--ink)}
+
+/* ── przyciski ─────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--f-body);font-weight:800;font-size:.95rem;letter-spacing:.02em;text-transform:uppercase;
+  padding:14px 26px;border:var(--rule-thick);background:var(--ink);color:var(--paper);
+  box-shadow:6px 6px 0 var(--red);transition:.14s;position:relative;
+}
+.btn>span{position:relative;z-index:1}
+.btn:hover{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--red)}
+.btn:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--red)}
+.btn--red{background:var(--red);color:var(--paper);box-shadow:6px 6px 0 var(--ink)}
+.btn--red:hover{box-shadow:2px 2px 0 var(--ink)}
+.btn--y{background:var(--yellow);color:var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn--y:hover{box-shadow:2px 2px 0 var(--ink)}
+.btn--ghost{background:transparent;color:var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn--ghost:hover{box-shadow:2px 2px 0 var(--ink)}
+.btn--sm{padding:9px 16px;font-size:.8rem;box-shadow:4px 4px 0 var(--red)}
+.btn--sm:hover{box-shadow:2px 2px 0 var(--red)}
+
+/* ── sticky nav ────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:900;background:var(--paper);
+  border-bottom:var(--rule-thick);
+}
+.nav-in{display:flex;align-items:stretch;height:66px}
+.brand{
+  display:flex;align-items:center;gap:10px;padding-right:22px;margin-right:auto;
+  border-right:var(--rule);flex:none;
+}
+.brand b{font-family:var(--f-display);font-size:1.55rem;letter-spacing:.01em;text-transform:uppercase}
+.brand i{
+  font-style:normal;font-family:var(--f-display);font-size:1.55rem;background:var(--red);color:var(--paper);
+  padding:1px 8px;line-height:1.05;
+}
+.nav-links{display:flex;align-items:stretch}
+.nav-links a{
+  display:flex;align-items:center;padding:0 clamp(9px,1.4vw,20px);
+  font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;
+  border-left:var(--rule);transition:.15s;
+}
+.nav-links a:hover{background:var(--yellow)}
+.nav-links a.on{background:var(--ink);color:var(--paper)}
+.nav-cta{
+  display:flex;align-items:center;padding:0 clamp(12px,1.8vw,26px);
+  background:var(--red);color:var(--paper);font-weight:800;font-size:.8rem;text-transform:uppercase;
+  border-left:var(--rule-thick);transition:.15s;
+}
+.nav-cta:hover{background:var(--yellow);color:var(--ink)}
+.burger{display:none;width:52px;height:66px;border-left:var(--rule);position:relative;flex:none}
+.burger i{position:absolute;left:13px;right:13px;height:4px;background:var(--ink);transition:.2s}
+.burger i:nth-child(1){top:20px}
+.burger i:nth-child(2){top:31px}
+.burger i:nth-child(3){top:42px}
+body.menu .burger i:nth-child(1){top:31px;transform:rotate(45deg)}
+body.menu .burger i:nth-child(2){opacity:0}
+body.menu .burger i:nth-child(3){top:31px;transform:rotate(-45deg)}
+@media(max-width:960px){
+  .nav-links{
+    display:none;position:fixed;top:66px;left:0;right:0;bottom:0;z-index:890;
+    flex-direction:column;background:var(--paper);border-top:var(--rule-thick);
+  }
+  body.menu .nav-links{display:flex}
+  .nav-links a{border-left:0;border-bottom:var(--rule);padding:18px var(--gut);
+    font-family:var(--f-display);font-size:2rem;letter-spacing:0;justify-content:space-between}
+  body.menu .nav-links a::after{
+    content:"→";display:block;color:var(--red);font-family:var(--f-body);font-size:1.6rem;font-weight:800;
+  }
+  .nav-cta{display:none}
+  .burger{display:block}
+  body.menu{overflow:hidden}
+}
+
+/* ── HERO ──────────────────────────────────────────── */
+.hero{position:relative;overflow:hidden;border-bottom:var(--rule-thick);background:var(--paper)}
+.hero-grid{
+  position:absolute;inset:0;pointer-events:none;opacity:.4;
+  background-image:linear-gradient(90deg,rgba(20,17,15,.09) 1px,transparent 1px);
+  background-size:calc(100%/12) 100%;
+}
+.hero-slash{
+  position:absolute;top:-10%;right:8%;width:min(150px,22vw);height:130%;
+  background:var(--red);transform:rotate(19deg);z-index:0;
+}
+.hero-slash::after{
+  content:"";position:absolute;left:100%;top:0;width:min(60px,9vw);height:100%;background:var(--yellow);
+}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  gap:clamp(20px,3vw,48px);align-items:center;
+  padding:clamp(34px,5vw,70px) var(--gut)}
+@media(max-width:940px){.hero-in{grid-template-columns:1fr}}
+.hero-eyebrow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tag{
+  font-family:var(--f-mono);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  background:var(--ink);color:var(--paper);padding:5px 10px;
+}
+.tag--r{background:var(--red)}
+.tag--y{background:var(--yellow);color:var(--ink)}
+.tag--b{background:var(--blue)}
+.hero h1{font-size:clamp(3rem,9.4vw,7.6rem);line-height:.92}
+.hero h1 .l1{display:block}
+.hero h1 .l2{color:var(--red);display:inline-block}
+.hero h1 .l3{display:block;font-size:.2em;letter-spacing:.16em;margin-top:.5em;color:var(--ink);
+  text-transform:uppercase;font-family:var(--f-mono);font-weight:600}
+.hero-date{
+  display:inline-block;margin-top:20px;font-family:var(--f-display);font-size:clamp(1.3rem,3.2vw,2.3rem);
+  background:var(--yellow);border:var(--rule-thick);padding:4px 16px;transform:rotate(-1.6deg);
+  box-shadow:6px 6px 0 var(--ink);
+}
+.hero-lede{margin:22px 0 0;max-width:52ch;font-size:clamp(15px,1.6vw,18px);color:var(--ink-2)}
+.hero-lede b{color:var(--ink);border-bottom:3px solid var(--red);padding-bottom:1px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
+.hero-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:var(--rule-thick);
+  margin-top:34px;background:var(--ink)}
+.hero-facts div{background:var(--paper);padding:14px 12px;border-right:var(--rule)}
+.hero-facts div:last-child{border-right:0}
+.hero-facts b{display:block;font-family:var(--f-display);font-size:clamp(1.7rem,4vw,2.6rem);line-height:1;color:var(--red)}
+.hero-facts span{display:block;margin-top:5px;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.1em;
+  text-transform:uppercase;line-height:1.4}
+@media(max-width:620px){.hero-facts{grid-template-columns:repeat(2,1fr)}
+  .hero-facts div:nth-child(2){border-right:0}
+  .hero-facts div:nth-child(-n+2){border-bottom:var(--rule)}}
+
+.hero-media{position:relative}
+.hero-photo{
+  position:relative;border:var(--rule-thick);background:var(--ink);overflow:hidden;
+  box-shadow:12px 12px 0 var(--red);
+}
+.hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.3) brightness(.95)}
+.hero-photo::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at center,rgba(20,17,15,.5) 1.4px,transparent 1.5px);
+  background-size:5px 5px;mix-blend-mode:multiply;opacity:.5;
+}
+.hero-photo::before{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:var(--red);mix-blend-mode:screen;opacity:.42;
+}
+.hero-stamp{
+  position:absolute;z-index:3;right:-16px;bottom:-16px;background:var(--yellow);
+  border:var(--rule-thick);padding:10px 16px;transform:rotate(-6deg);
+  box-shadow:6px 6px 0 var(--ink);text-align:center;
+}
+.hero-stamp b{display:block;font-family:var(--f-display);font-size:2.4rem;line-height:.9;color:var(--ink)}
+.hero-stamp span{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase}
+
+/* ── pasek przewijany ──────────────────────────────── */
+.ticker{background:var(--ink);color:var(--paper);overflow:hidden;padding:11px 0;border-bottom:var(--rule-thick)}
+.tk{display:flex;width:max-content;animation:tk 30s linear infinite}
+.ticker:hover .tk{animation-play-state:paused}
+@keyframes tk{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.tk span{
+  display:flex;align-items:center;gap:14px;padding:0 26px;white-space:nowrap;
+  font-family:var(--f-display);font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;
+}
+.tk span::after{content:"■";color:var(--yellow);font-size:.6em}
+.tk b{color:var(--yellow)}
+
+/* ── manifest ──────────────────────────────────────── */
+.manifest{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,60px)}
+@media(max-width:900px){.manifest{grid-template-columns:1fr}}
+.manifest-lead{font-size:clamp(1.15rem,2.3vw,1.7rem);line-height:1.35;font-weight:600;margin:0 0 20px}
+.manifest-lead em{font-style:normal;background:var(--yellow);padding:0 4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.manifest p{margin:0 0 16px;color:var(--ink-2);max-width:62ch}
+.manifest p b{color:var(--ink)}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--rule);background:var(--ink);
+  border:var(--rule-thick)}
+.stat{background:var(--paper);padding:22px 18px;position:relative;overflow:hidden}
+.stat:nth-child(2){background:var(--yellow)}
+.stat:nth-child(3){background:var(--red);color:var(--paper)}
+.stat:nth-child(4){background:var(--ink);color:var(--paper)}
+.stat b{display:block;font-family:var(--f-display);font-size:clamp(2.4rem,5.6vw,3.8rem);line-height:.9}
+.stat:nth-child(3) b{color:var(--yellow)}
+.stat span{display:block;margin-top:8px;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;
+  text-transform:uppercase;line-height:1.5}
+.stat::after{
+  content:"";position:absolute;right:-16px;bottom:-16px;width:56px;height:56px;
+  background:var(--ink);transform:rotate(45deg);opacity:.12;
+}
+
+/* ── TRASA ──────────────────────────────────────────── */
+.route{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,3.5vw,50px);align-items:start}
+@media(max-width:1000px){.route{grid-template-columns:1fr}}
+.map{border:var(--rule-thick);background:var(--paper-2);position:relative;overflow:hidden}
+.map svg{width:100%;height:auto;display:block}
+.map-badge{
+  position:absolute;left:0;top:0;background:var(--ink);color:var(--yellow);
+  font-family:var(--f-mono);font-size:.66rem;font-weight:600;letter-spacing:.18em;
+  text-transform:uppercase;padding:7px 12px;z-index:2;
+}
+/* tabela OS — jak lista startowa */
+.ostable{border:var(--rule-thick);background:var(--ink);color:var(--paper)}
+.osrow{
+  display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:14px;align-items:center;
+  padding:15px 16px;border-bottom:2px solid rgba(239,234,217,.22);transition:.15s;
+}
+.osrow:last-child{border-bottom:0}
+.osrow:hover{background:var(--red)}
+.osrow:hover .osrow-t{color:var(--yellow)}
+.osrow-n{font-family:var(--f-display);font-size:1.5rem;line-height:1;color:var(--yellow)}
+.osrow-n small{display:block;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.1em;color:var(--paper-3);margin-top:3px}
+.osrow-b h4{margin:0;font-family:var(--f-display);font-size:1.25rem;letter-spacing:.01em}
+.osrow-b p{margin:3px 0 0;font-size:.85rem;color:var(--paper-3);line-height:1.45}
+.osrow-t{font-family:var(--f-mono);font-size:.82rem;color:var(--paper);text-align:right;white-space:nowrap}
+@media(max-width:560px){
+  .osrow{grid-template-columns:70px 1fr;row-gap:8px}
+  .osrow-t{grid-column:2;text-align:left}
+}
+
+/* ── HARMONOGRAM ───────────────────────────────────── */
+.tabs{display:flex;flex-wrap:wrap;border:var(--rule-thick);border-bottom:0;background:var(--paper)}
+.tab{
+  padding:14px 22px;font-family:var(--f-display);font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;
+  border-right:var(--rule);transition:.15s;position:relative;
+}
+.tab:last-child{border-right:0}
+.tab small{display:block;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;color:var(--grey);margin-top:2px}
+.tab:hover{background:var(--paper-2)}
+.tab.on{background:var(--ink);color:var(--paper)}
+.tab.on small{color:var(--yellow)}
+.tp{display:none}
+.tp.on{display:block;animation:cut .35s cubic-bezier(.2,.9,.3,1)}
+@keyframes cut{from{opacity:0;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0 0 0 0)}}
+.trow{
+  display:grid;grid-template-columns:150px minmax(0,1fr);gap:clamp(14px,2.5vw,34px);
+  padding:20px 0;border-bottom:var(--rule);align-items:start;
+}
+.trow:last-child{border-bottom:0}
+@media(max-width:700px){.trow{grid-template-columns:1fr;gap:8px}}
+.trow-t{
+  font-family:var(--f-display);font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1;color:var(--red);
+  display:flex;align-items:center;gap:8px;
+}
+.trow-t::after{content:"";flex:1;height:4px;background:var(--ink)}
+@media(max-width:700px){.trow-t::after{display:none}}
+.trow-c h4{margin:0 0 5px;font-family:var(--f-display);font-size:clamp(1.2rem,2.4vw,1.6rem)}
+.trow-c p{margin:0;color:var(--ink-2);font-size:.95rem;max-width:64ch}
+.trow-loc{
+  display:inline-flex;align-items:center;gap:7px;margin-top:11px;font-family:var(--f-mono);
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;background:var(--paper-2);
+  border:2px solid var(--ink);padding:5px 9px;transition:.15s;
+}
+.trow-loc:hover{background:var(--yellow)}
+.trow-loc svg{width:13px;height:13px;flex:none}
+.pill{
+  display:inline-block;margin-top:10px;font-family:var(--f-mono);font-size:.66rem;font-weight:600;
+  letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;background:var(--yellow);
+  border:2px solid var(--ink);
+}
+.pill--r{background:var(--red);color:var(--paper)}
+.pill--b{background:var(--blue);color:var(--paper)}
+.pill--g{background:var(--ink);color:var(--paper)}
+
+/* ── KLASY ─────────────────────────────────────────── */
+.cls-filter{display:flex;flex-wrap:wrap;gap:0;border:var(--rule-thick);margin-bottom:0}
+.fchip{
+  font-family:var(--f-mono);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:11px 16px;border-right:var(--rule);transition:.15s;
+}
+.fchip:last-child{border-right:0}
+.fchip:hover{background:var(--paper-2)}
+.fchip.on{background:var(--ink);color:var(--yellow)}
+.cls-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0;
+  border:var(--rule-thick);border-top:0;background:var(--ink)}
+.cls{background:var(--paper);padding:18px 16px 16px;border-right:var(--rule);border-bottom:var(--rule);
+  position:relative;transition:.15s;display:flex;flex-direction:column}
+.cls:nth-child(4n){border-right:0}
+.cls:hover{background:var(--yellow)}
+.cls-h{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.cls-n{font-family:var(--f-display);font-size:3rem;line-height:.8;color:var(--red)}
+.cls:hover .cls-n{color:var(--ink)}
+.cls-tag{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
+  text-align:right;background:var(--ink);color:var(--paper);padding:4px 7px;max-width:120px;line-height:1.4}
+.cls h4{margin:12px 0 5px;font-family:var(--f-display);font-size:1.25rem}
+.cls p{margin:0;font-size:.87rem;color:var(--ink-2);line-height:1.5}
+.cls ul{margin:10px 0 0;padding:0;list-style:none}
+.cls li{font-size:.83rem;padding:3px 0 3px 14px;position:relative;color:var(--ink-2)}
+.cls li::before{content:"■";position:absolute;left:0;top:4px;color:var(--red);font-size:.6rem}
+.cls-note{margin-top:auto;padding-top:10px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--grey);border-top:2px solid var(--paper-3);padding-top:10px}
+
+/* ── VOLVO EURO CUP ────────────────────────────────── */
+.vc{background:var(--red);color:var(--paper);border-block:var(--rule-thick);position:relative;overflow:hidden}
+.vc::before{content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background-image:repeating-linear-gradient(45deg,transparent 0 18px,var(--ink) 18px 36px)}
+.vc-in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:clamp(22px,4vw,54px);align-items:center}
+@media(max-width:920px){.vc-in{grid-template-columns:1fr}}
+.vc h2{font-size:clamp(2.4rem,6.6vw,4.8rem);color:var(--yellow)}
+.vc p{color:var(--paper);font-size:1.05rem;max-width:56ch}
+.vc p b{color:var(--yellow)}
+.vc-models{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.vc-models span{
+  font-family:var(--f-display);font-size:1rem;letter-spacing:.02em;background:var(--paper);color:var(--ink);
+  padding:4px 12px;border:var(--rule);
+}
+.vc-count{
+  display:flex;align-items:center;gap:16px;margin-top:26px;background:var(--ink);
+  border:var(--rule-thick);padding:14px 20px;max-width:340px;box-shadow:8px 8px 0 var(--yellow);
+}
+.vc-count b{font-family:var(--f-display);font-size:3.6rem;line-height:.85;color:var(--yellow)}
+.vc-count span{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.5}
+.vc-photos{display:grid;grid-template-columns:1fr 1fr;gap:var(--rule)}
+.vc-photos figure{margin:0;border:var(--rule-thick);background:var(--ink);overflow:hidden;position:relative}
+.vc-photos figure:first-child{transform:rotate(-2.2deg)}
+.vc-photos figure:last-child{transform:rotate(2deg) translateY(12px)}
+.vc-photos img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.2)}
+.vc-photos figure::after{content:"";position:absolute;inset:0;background:var(--blue);mix-blend-mode:screen;opacity:.4}
+
+/* ── gwiazdy ───────────────────────────────────────── */
+.duo{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border:var(--rule-thigh);
+  border:var(--rule-thick);background:var(--ink)}
+.duo > *{border-right:var(--rule)}
+.duo > *:last-child{border-right:0}
+.star{background:var(--paper);transition:.15s;display:flex;flex-direction:column}
+.star:hover{background:var(--paper-2)}
+.star-photo{position:relative;border-bottom:var(--rule-thick);overflow:hidden;background:var(--ink)}
+.star-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.25);
+  transition:filter .3s,transform .6s cubic-bezier(.2,.9,.3,1)}
+.star:hover .star-photo img{filter:none;transform:scale(1.04)}
+.star-photo::after{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(circle at center,rgba(20,17,15,.45) 1.4px,transparent 1.5px);
+  background-size:5px 5px;mix-blend-mode:multiply;opacity:.45}
+.star-flag{
+  position:absolute;z-index:3;left:0;top:0;font-family:var(--f-mono);font-size:.68rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:var(--paper);
+  padding:6px 11px;border-right:var(--rule-thick);border-bottom:var(--rule-thick);
+}
+.star-flag.b{background:var(--blue)}
+.star-flag.g{background:var(--yellow);color:var(--ink)}
+.star-body{padding:18px 18px 20px;flex:1;display:flex;flex-direction:column}
+.star-body h3{margin:0;font-size:clamp(1.5rem,2.8vw,2rem);line-height:.95}
+.star-role{display:block;margin:6px 0 12px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--red);font-weight:600}
+.star-body p{margin:0 0 14px;font-size:.93rem;color:var(--ink-2);line-height:1.55}
+.star-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.star-tags span{font-family:var(--f-mono);font-size:.64rem;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;border:2px solid var(--ink);padding:3px 8px}
+@media(max-width:760px){
+  .duo{border:var(--rule-thick)}
+  .duo > *{border-right:0;border-bottom:var(--rule)}
+  .duo > *:last-child{border-bottom:0}
+}
+
+/* ── baza ──────────────────────────────────────────── */
+.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;
+  border:var(--rule-thick);background:var(--ink)}
+.base{background:var(--paper);padding:20px 18px;border-right:var(--rule);transition:.15s}
+.base:last-child{border-right:0}
+.base:hover{background:var(--yellow)}
+.base-w{display:inline-block;font-family:var(--f-mono);font-size:.64rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;background:var(--ink);color:var(--yellow);padding:4px 9px}
+.base h4{margin:12px 0 6px;font-family:var(--f-display);font-size:1.4rem}
+.base p{margin:0 0 12px;font-size:.9rem;color:var(--ink-2);line-height:1.55}
+.gmap{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:.68rem;
+  letter-spacing:.08em;text-transform:uppercase;border-bottom:3px solid var(--red);padding-bottom:2px;transition:.15s}
+.gmap:hover{color:var(--red);border-color:var(--ink)}
+.gmap svg{width:13px;height:13px;flex:none}
+@media(max-width:760px){
+  .bases{border:var(--rule-thick)}
+  .base{border-right:0;border-bottom:var(--rule)}
+  .base:last-child{border-bottom:0}
+}
+
+/* ── wpisowe ───────────────────────────────────────── */
+.entry{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(24px,4vw,56px);align-items:center}
+@media(max-width:920px){.entry{grid-template-columns:1fr}}
+.price{
+  background:var(--ink);color:var(--paper);border:var(--rule-thick);
+  box-shadow:12px 12px 0 var(--red);position:relative;padding:clamp(24px,3.4vw,38px);
+}
+.price::before{
+  content:"WPISOWE";position:absolute;right:-3px;top:-3px;background:var(--yellow);color:var(--ink);
+  font-family:var(--f-mono);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  padding:6px 12px;border:var(--rule-thick);border-bottom:0;border-right:0;
+}
+.price-lab{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper-3)}
+.price-amt{display:flex;align-items:baseline;gap:12px;margin:10px 0 4px}
+.price-amt b{font-family:var(--f-display);font-size:clamp(3.4rem,9vw,5.4rem);line-height:.85;color:var(--yellow)}
+.price-amt i{font-style:normal;font-family:var(--f-display);font-size:1.5rem}
+.price-note{margin:0 0 22px;font-family:var(--f-mono);font-size:.72rem;color:var(--paper-3)}
+.price-list{list-style:none;margin:0 0 26px;padding:0;display:flex;flex-direction:column;gap:10px}
+.price-list li{display:flex;gap:11px;align-items:flex-start;font-size:.95rem;color:var(--paper-2)}
+.price-list li::before{content:"▮";color:var(--red);flex:none;font-size:.7rem;line-height:1.9}
+.price-list li b{color:var(--paper)}
+.entry-side h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.entry-side h2 em{font-style:normal;color:var(--red)}
+.entry-side>p{color:var(--ink-2);font-size:1rem;max-width:54ch}
+.meter{margin:24px 0}
+.meter-bar{height:34px;border:var(--rule);background:var(--paper-2);position:relative;overflow:hidden}
+.meter-bar i{display:block;height:100%;width:0;background:var(--yellow);
+  border-right:3px solid var(--ink);transition:width 1.6s cubic-bezier(.2,.9,.3,1)}
+.meter-meta{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--f-mono);
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+.meter-meta b{color:var(--ink)}
+.notice{
+  display:flex;gap:12px;align-items:flex-start;background:var(--yellow);border:var(--rule-thick);
+  padding:14px 16px;margin-bottom:22px;box-shadow:6px 6px 0 var(--ink);
+}
+.notice svg{width:22px;height:22px;flex:none;margin-top:1px}
+.notice div{font-size:.93rem;line-height:1.5}
+.notice b{color:var(--red)}
+
+/* ── licznik ───────────────────────────────────────── */
+.cd{display:flex;gap:0;border:var(--rule-thick);width:max-content;max-width:100%;flex-wrap:wrap}
+.cd-c{flex:1;min-width:76px;padding:12px 14px 10px;text-align:center;background:var(--paper);
+  border-right:var(--rule);border-bottom:var(--rule)}
+.cd-c:last-child{border-right:0}
+.cd-c b{display:block;font-family:var(--f-display);font-size:clamp(1.8rem,4.6vw,2.6rem);line-height:1;
+  color:var(--red);font-variant-numeric:tabular-nums}
+.cd-c span{display:block;margin-top:4px;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--grey)}
+.cd-lab{font-family:var(--f-mono);font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  margin-bottom:9px;display:block}
+
+/* ── galeria ───────────────────────────────────────── */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:0;
+  border:var(--rule-thick);background:var(--ink)}
+.g{margin:0;position:relative;border-right:var(--rule);border-bottom:var(--rule);cursor:zoom-in;
+  background:var(--ink);overflow:hidden}
+.g img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.22);
+  transition:filter .3s,transform .6s cubic-bezier(.2,.9,.3,1)}
+.g:hover img{filter:none;transform:scale(1.05)}
+.g figcaption{
+  position:absolute;left:0;right:0;bottom:0;background:var(--ink);color:var(--paper);
+  font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 10px;border-top:var(--rule);
+}
+.g:hover figcaption{background:var(--red)}
+.g:hover figcaption::before{content:"▸ "}
+
+/* ── lightbox ──────────────────────────────────────── */
+.lb{position:fixed;inset:0;z-index:9500;background:rgba(20,17,15,.94);display:none;place-items:center;padding:clamp(14px,4vw,50px)}
+.lb.on{display:grid}
+.lb-in{border:var(--rule-thick);background:var(--paper);padding:12px;max-width:min(1100px,94vw);
+  box-shadow:12px 12px 0 var(--red)}
+.lb-in img{max-width:100%;max-height:78vh;object-fit:contain;display:block}
+.lb-cap{margin-top:10px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  text-align:center}
+.lb-x{position:absolute;top:14px;right:20px;font-size:2.6rem;line-height:1;color:var(--paper);transition:.15s}
+.lb-x:hover{color:var(--yellow)}
+.lb-n{position:absolute;top:50%;transform:translateY(-50%);font-size:2.4rem;color:var(--paper);
+  width:54px;height:54px;display:grid;place-items:center;border:3px solid var(--paper);transition:.15s}
+.lb-n:hover{background:var(--yellow);color:var(--ink)}
+.lb-n.p{left:10px}.lb-n.n{right:10px}
+
+/* ── FAQ ───────────────────────────────────────────── */
+.faq{border:var(--rule-thick)}
+.qa{border-bottom:var(--rule);background:var(--paper)}
+.qa:last-child{border-bottom:0}
+.qa summary{
+  list-style:none;cursor:pointer;padding:18px 60px 18px 18px;position:relative;
+  font-family:var(--f-display);font-size:clamp(1.05rem,2vw,1.4rem);letter-spacing:.01em;
+}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{
+  content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);
+  width:30px;height:30px;display:grid;place-items:center;background:var(--ink);color:var(--yellow);
+  font-family:var(--f-mono);font-weight:700;font-size:1.2rem;transition:.2s;
+}
+.qa[open] summary{background:var(--ink);color:var(--paper)}
+.qa[open] summary::after{content:"−";background:var(--red);color:var(--paper)}
+.qa p{margin:0;padding:16px 18px 18px;font-size:.95rem;color:var(--ink-2);line-height:1.65;max-width:90ch}
+
+/* ── CTA ───────────────────────────────────────────── */
+.finale{background:var(--red);color:var(--paper);border-top:var(--rule-thick);position:relative;overflow:hidden;text-align:center}
+.finale::before{content:"";position:absolute;inset:0;opacity:.13;
+  background-image:repeating-linear-gradient(45deg,transparent 0 22px,var(--ink) 22px 44px)}
+.finale-in{position:relative;padding:clamp(50px,7vw,100px) 0}
+.finale h2{font-size:clamp(2.8rem,9vw,6.6rem);color:var(--yellow);text-shadow:6px 6px 0 var(--ink)}
+.finale h2 em{font-style:normal;color:var(--paper)}
+.finale p{max-width:52ch;margin:16px auto 28px;font-size:1.05rem}
+.finale .hero-btns{justify-content:center}
+.finale-num{
+  position:absolute;right:-2vw;bottom:-6vw;font-family:var(--f-display);font-size:clamp(200px,36vw,520px);
+  line-height:.7;color:transparent;-webkit-text-stroke:3px rgba(20,17,15,.35);pointer-events:none;
+}
+
+/* ── stopka ────────────────────────────────────────── */
+.ft{border-top:var(--rule-thick);background:var(--ink);color:var(--paper);padding:clamp(34px,5vw,60px) 0 24px}
+.ft-grid{display:grid;grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,44px)}
+@media(max-width:880px){.ft-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.ft-grid{grid-template-columns:1fr}}
+.ft h5{margin:0 0 14px;font-family:var(--f-display);font-size:1.2rem;color:var(--yellow);letter-spacing:.03em}
+.ft ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.ft ul a{color:var(--paper-2);font-size:.9rem;transition:.15s}
+.ft ul a:hover{color:var(--yellow)}
+.ft p{color:var(--paper-3);font-size:.92rem;max-width:44ch;margin:0 0 12px}
+.ft-bot{
+  margin-top:clamp(24px,4vw,40px);padding-top:18px;border-top:2px solid rgba(239,234,217,.22);
+  display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between;
+  font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-3);
+}
+
+/* ── sticky CTA ────────────────────────────────────── */
+.stick{
+  position:fixed;left:12px;right:12px;bottom:12px;z-index:880;display:none;align-items:center;
+  justify-content:space-between;gap:12px;padding:10px 10px 10px 16px;background:var(--ink);
+  color:var(--paper);border:var(--rule-thick);box-shadow:6px 6px 0 var(--red);
+  transform:translateY(170%);transition:transform .35s cubic-bezier(.2,.9,.3,1);
+}
+.stick.on{transform:none}
+.stick p{margin:0;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--paper-3);line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stick p b{display:block;font-family:var(--f-display);font-size:1.1rem;color:var(--yellow);letter-spacing:.02em}
+@media(max-width:960px){.stick{display:flex}}
+@media(max-width:520px){.stick .btn{padding:8px 12px;font-size:.72rem}}
+
+/* ── reveal ────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .5s cubic-bezier(.2,.9,.3,1),transform .5s cubic-bezier(.2,.9,.3,1)}
+.rv.in{opacity:1;transform:none}
+.rv-1{transition-delay:.07s}.rv-2{transition-delay:.14s}.rv-3{transition-delay:.21s}.rv-4{transition-delay:.28s}
+.rv-l{transform:translateX(-24px)}
+.rv-r{transform:translateX(24px)}
+
+/* ── prefers-reduced-motion ────────────────────────── */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+  .tk{animation:none}
+}
+
+/* ── pasek wariantów ─────────────────────────────── */
+.vbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:950;
+  background:rgba(8,9,11,.93);backdrop-filter:blur(14px);
+  border-top:1px solid rgba(255,255,255,.12);
+  font-family:"IBM Plex Mono",monospace;
+}
+.vbar-in{display:flex;align-items:center;gap:14px;padding:9px var(--gut);max-width:1240px;margin:0 auto}
+.vbar-l{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6f6d68;white-space:nowrap}
+.vbar a{
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#a7a49d;
+  border:1px solid rgba(255,255,255,.16);padding:6px 11px;transition:.2s;white-space:nowrap;
+}
+.vbar a:hover{color:#e9e6e0;border-color:rgba(255,255,255,.4)}
+.vbar a.on{background:#e02718;color:#fff;border-color:#e02718}
+.vbar-h{margin-left:auto;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:#6f6d68;white-space:nowrap}
+@media(max-width:720px){
+  .vbar-in{gap:8px;padding:8px 12px}
+  .vbar-l,.vbar-h{display:none}
+  .vbar a{font-size:9.5px;padding:5px 8px}
+}
+@media print{.vbar{display:none}}
+</style>
+</head>
+<body>
+
+<!-- ══════════ NAV ══════════ -->
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top"><b>GoAudit</b><i>11</i></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#impreza">Impreza</a>
+      <a href="#trasa">Trasa</a>
+      <a href="#harmonogram">Harmonogram</a>
+      <a href="#klasy">Klasy</a>
+      <a href="#eurocup">Volvo Euro Cup</a>
+      <a href="#galeria">Galeria</a>
+    </div>
+    <a class="nav-cta" href="#zapis">Zapisz się</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="hero-slash" aria-hidden="true"></div>
+  <div class="wrap hero-in">
+    <div>
+      <div class="hero-eyebrow">
+        <span class="tag tag--r">Impreza kończąca sezon</span>
+        <span class="tag">Dzierżoniów</span>
+        <span class="tag tag--b">Góry Sowie</span>
+        <span class="tag tag--y">Runda Volvo Euro Cup</span>
+      </div>
+      <h1>
+        <span class="l1">GoAudit</span>
+        <span class="l2">Rajd</span> <span class="l2">Wikinga</span>
+        <span class="l3">Edycja 11 · Rajd Wikinga</span>
+      </h1>
+      <div class="hero-date">13 – 15 LISTOPADA 2026</div>
+      <p class="hero-lede">
+        Po raz pierwszy w historii rajd rozciąga się na <b>trzy dni</b> i obejmuje ponad
+        <b>100 kilometrów odcinków specjalnych</b> — od prologu na rynku w Dzierżoniowie,
+        przez Srebrną Górę i Jodłownik, aż po Przełęcz Jugowską.
+      </p>
+      <div class="hero-btns">
+        <a class="btn btn--red" href="#zapis"><span>Zapisz załogę</span></a>
+        <a class="btn btn--ghost" href="#harmonogram"><span>Harmonogram</span></a>
+      </div>
+      <div class="hero-facts">
+        <div><b>100+</b><span>km odcinków</span></div>
+        <div><b>3</b><span>dni jazdy</span></div>
+        <div><b>120</b><span>miejsc</span></div>
+        <div><b>14</b><span>klas</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="hero-photo">
+        <img src="assets/img/hero-940-dust.webp" alt="Volvo 940 wyrzucający chmurę kurzu na szutrowym odcinku rajdowym" fetchpriority="high">
+      </div>
+      <div class="hero-stamp">
+        <b>11</b>
+        <span>Rajd Wikinga</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TICKER ══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="tk" id="tk"></div>
+</div>
+
+<!-- ══════════ IMPREZA ══════════ -->
+<section class="sec" id="impreza">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">01 / Impreza</span>
+        <h2>Trzy dni.<br>Dziesięć <em>odcinków</em>.</h2>
+      </div>
+      <p>
+        Rajd Wikinga to impreza kończąca sezon rajdowy w regionie. W edycji GoAudit 11
+        po raz pierwszy <b>rozciąga się na trzy dni</b> i obejmuje ponad
+        <b>100 kilometrów odcinków specjalnych</b>.
+      </p>
+    </div>
+
+    <div class="manifest">
+      <div class="rv">
+        <p class="manifest-lead">
+          Zawody startują w Dzierżoniowie i prowadzą na trasy <em>Gór Sowich</em> —
+          z jazdu ze Srebrnej Góry, przez Jodłownik i Kamionki, aż po Przełęcz Jugowską.
+        </p>
+        <p>
+          Zawody stanowią również rundę północnoeuropejskiego pucharu <b>Volvo Euro Cup</b>.
+          Do klasy 14 zgłosiło się <b>11 skandynawskich załóg</b> w tylnonapędowych rajdówkach
+          Volvo — głównie w modelach Volvo 940, ale także PV544, P1800, 240 oraz 740.
+        </p>
+        <p>
+          W piątek baza rajdu i park serwisowy znajdują się na terenie OSiR-u przy ul. Strumykowej 1.
+          W sobotę serwis przenosi się bezpośrednio na start odcinka Różana. W niedzielę
+          między pętlami nie przewidziano standardowego serwisu — załogi oczekują na przegrupowaniu
+          za metą odcinka Jugów, po czym trasa pokonywana jest w przeciwnym kierunku.
+        </p>
+        <p>
+          Organizatorem jest <b>BGM Sport</b> (Szymon Mazur) we współpracy z <b>OSiR Dzierżoniów</b>.
+          Zapisy prowadzone są przez <a href="https://bgmsport.pl" target="_blank" rel="noopener"
+          style="color:var(--red);font-weight:700">bgmsport.pl</a>, limit to 120 załóg.
+        </p>
+      </div>
+      <div class="stat-grid rv rv-2">
+        <div class="stat"><b data-count="100" data-suffix="+">0</b><span>km odcinków specjalnych</span></div>
+        <div class="stat"><b data-count="10">0</b><span>odcinków specjalnych</span></div>
+        <div class="stat"><b data-count="90" data-suffix="+">0</b><span>załóg na liście zgłoszeń</span></div>
+        <div class="stat"><b data-count="14">0</b><span>klas startowych</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TRASA ══════════ -->
+<section class="sec band" id="trasa" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">02 / Trasa</span>
+        <h2>Odcinki <em>specjalne</em></h2>
+      </div>
+      <p>
+        Dziesięć odcinków specjalnych, sześć pierwszej jazdy w sobotę i cztery w niedzielę —
+        z charakterystycznym powtórzeniem trasy w przeciwnym kierunku. Podane godziny
+        oznaczają start pierwszej załogi; odstęp startowy wynosi 1 minutę.
+      </p>
+    </div>
+
+    <div class="route">
+      <div class="map rv rv-l">
+        <span class="map-badge">Schemat trasy · Góry Sowie</span>
+        <svg viewBox="0 0 1000 700" role="img" aria-label="Schemat trasy rajdu: Dzierżoniów, Różana, Srebrna Góra, Jodłownik, Kamionki, Przełęcz Jugowska">
+          <defs>
+            <pattern id="ht" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <rect width="10" height="10" fill="#e5dfc9"/>
+              <line x1="0" y1="0" x2="0" y2="10" stroke="#14110f" stroke-width="2.6" opacity=".3"/>
+            </pattern>
+            <pattern id="ht2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+              <rect width="7" height="7" fill="#e5dfc9"/>
+              <line x1="0" y1="0" x2="0" y2="7" stroke="#14110f" stroke-width="1.8" opacity=".26"/>
+            </pattern>
+          </defs>
+
+          <rect width="1000" height="700" fill="#e5dfc9"/>
+          <path d="M40 480 L190 250 L320 440 L470 190 L620 430 L760 265 L950 470 L950 700 L40 700 Z" fill="url(#ht2)" stroke="#14110f" stroke-width="4"/>
+          <path d="M320 440 L470 190 L620 430 L555 480 L470 320 L400 480 Z" fill="url(#ht)" stroke="#14110f" stroke-width="3.4"/>
+          <path d="M190 250 L320 440 L250 480 L160 360 Z" fill="url(#ht)" stroke="#14110f" stroke-width="3"/>
+          <path d="M190 250 L142 310 L238 310 Z M470 190 L420 248 L520 248 Z M760 265 L714 320 L806 320 Z" fill="#efead9" stroke="#14110f" stroke-width="3"/>
+
+          <!-- drogi -->
+          <g fill="none" stroke="#14110f" stroke-width="2.4" stroke-dasharray="12 9" opacity=".6">
+            <path d="M120 600 C190 540 230 500 262 492"/>
+            <path d="M262 492 C320 430 380 380 450 300"/>
+            <path d="M336 400 C380 350 410 320 430 292"/>
+            <path d="M596 400 C640 330 680 280 726 244"/>
+            <path d="M726 244 C720 280 700 320 686 352"/>
+          </g>
+
+          <!-- OS -->
+          <path class="os-p" data-os="1" d="M262 492 L300 470 L286 452 L320 440 L306 420 L344 410 L330 388 L372 378 L358 356 L400 344 L388 322 L436 308"
+            fill="none" stroke="#e03626" stroke-width="6" stroke-linecap="square"/>
+          <path class="os-p" data-os="2" d="M336 400 L360 372 L352 344 L392 330 L384 306 L430 292"
+            fill="none" stroke="#1b4b8f" stroke-width="6" stroke-linecap="square"/>
+          <path class="os-p" data-os="7" d="M596 400 L620 366 L608 332 L646 318 L634 288 L680 274 L664 246 L712 232"
+            fill="none" stroke="#f5c518" stroke-width="6" stroke-linecap="square"/>
+          <path class="os-p" data-os="8" d="M686 352 L700 322 L688 296 L716 284 L726 256"
+            fill="none" stroke="#14110f" stroke-width="6" stroke-linecap="square"/>
+          <path class="os-p" data-os="10" d="M726 244 L700 268 L712 296 L678 312 L690 342 L652 358 L664 388 L618 402"
+            fill="none" stroke="#1b4b8f" stroke-width="6" stroke-linecap="square" opacity=".45"/>
+
+          <!-- znaczniki -->
+          <g font-family="IBM Plex Mono, monospace" font-size="17" font-weight="600">
+            <g class="mn" data-os="1" transform="translate(262 492)">
+              <rect x="-13" y="-13" width="26" height="26" fill="#e03626" stroke="#14110f" stroke-width="3.4"/>
+              <text x="-22" y="38" fill="#14110f" text-anchor="end">RÓŻANA</text>
+              <text x="-22" y="58" fill="#8d8677" font-size="13" font-weight="400" text-anchor="end">OS 1 / 3 / 5</text>
+            </g>
+            <g class="mn" data-os="2" transform="translate(336 400)">
+              <rect x="-13" y="-13" width="26" height="26" fill="#1b4b8f" stroke="#14110f" stroke-width="3.4"/>
+              <text x="-22" y="38" fill="#14110f" text-anchor="end">JODŁOWNIK</text>
+              <text x="-22" y="58" fill="#8d8677" font-size="13" font-weight="400" text-anchor="end">OS 2 / 4 / 6</text>
+            </g>
+            <g class="mn" data-os="7" transform="translate(596 400)">
+              <rect x="-13" y="-13" width="26" height="26" fill="#f5c518" stroke="#14110f" stroke-width="3.4"/>
+              <text x="-22" y="38" fill="#14110f" text-anchor="end">KAMIONKI</text>
+              <text x="-22" y="58" fill="#8d8677" font-size="13" font-weight="400" text-anchor="end">OS 7 / 10</text>
+            </g>
+            <g class="mn" data-os="8" transform="translate(686 352)">
+              <rect x="-13" y="-13" width="26" height="26" fill="#14110f" stroke="#14110f" stroke-width="3.4"/>
+              <text x="-22" y="38" fill="#14110f" text-anchor="end">JUGÓW</text>
+              <text x="-22" y="58" fill="#8d8677" font-size="13" font-weight="400" text-anchor="end">OS 8 / 9</text>
+            </g>
+            <g transform="translate(120 600)">
+              <rect x="-14" y="-14" width="28" height="28" fill="#efead9" stroke="#14110f" stroke-width="4"/>
+              <text x="-24" y="44" fill="#14110f" text-anchor="end">DZIERŻONIÓW</text>
+              <text x="-24" y="64" fill="#8d8677" font-size="13" font-weight="400" text-anchor="end">START / META</text>
+            </g>
+            <g transform="translate(456 300)">
+              <path d="M0 -14 L14 10 L-14 10 Z" fill="#efead9" stroke="#14110f" stroke-width="3.4"/>
+              <text x="20" y="6" fill="#14110f">SREBRNA GÓRA</text>
+            </g>
+            <g transform="translate(726 244)">
+              <path d="M0 -14 L14 10 L-14 10 Z" fill="#f5c518" stroke="#14110f" stroke-width="3.4"/>
+              <text x="20" y="6" fill="#14110f">PRZEŁĘCZ JUGOWSKA</text>
+            </g>
+            <g transform="translate(150 566)">
+              <text x="0" y="0" fill="#8d8677" font-size="14" font-weight="400">PIŁAWA GÓRNA</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="ostable rv rv-r" id="osList">
+        <div class="osrow" data-os="1">
+          <div class="osrow-n">OS 1<small>08:30</small></div>
+          <div class="osrow-b">
+            <h4>Różana</h4>
+            <p>3 pętle · odcinek ze zmodyfikowanym łącznikiem szutrowym</p>
+          </div>
+          <div class="osrow-t">08:30<br>12:30<br>15:30</div>
+        </div>
+        <div class="osrow" data-os="2">
+          <div class="osrow-n">OS 2<small>08:55</small></div>
+          <div class="osrow-b">
+            <h4>Jodłownik – Srebrna Góra</h4>
+            <p>3 pętle · techniczna trasa górska</p>
+          </div>
+          <div class="osrow-t">08:55<br>12:55<br>15:55</div>
+        </div>
+        <div class="osrow" data-os="7">
+          <div class="osrow-n">OS 7<small>08:30</small></div>
+          <div class="osrow-b">
+            <h4>Kamionki</h4>
+            <p>Podjazd pod Przełęcz Jugowską · meta przesunięta za szczyt i ostatnie zakręty</p>
+          </div>
+          <div class="osrow-t">08:30</div>
+        </div>
+        <div class="osrow" data-os="8">
+          <div class="osrow-n">OS 8<small>08:40</small></div>
+          <div class="osrow-b">
+            <h4>Jugów (Tartak)</h4>
+            <p>Start ok. 100 m za metą OS Kamionki · zjazd w stronę Jugowa</p>
+          </div>
+          <div class="osrow-t">08:40</div>
+        </div>
+        <div class="osrow" data-os="9">
+          <div class="osrow-n">OS 9<small>12:30</small></div>
+          <div class="osrow-b">
+            <h4>Jugów — odwrotny kierunek</h4>
+            <p>Od tartaku w górę do Przełęczy Jugowskiej</p>
+          </div>
+          <div class="osrow-t">12:30*</div>
+        </div>
+        <div class="osrow" data-os="10">
+          <div class="osrow-n">OS 10<small>12:40</small></div>
+          <div class="osrow-b">
+            <h4>Kamionki — odwrotny kierunek</h4>
+            <p>Zjazd z przełęczy w dół do Kamionek</p>
+          </div>
+          <div class="osrow-t">12:40*</div>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:18px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;color:var(--grey)">
+      * godziny orientacyjne — harmonogram może ulec zmianie.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ HARMONOGRAM ══════════ -->
+<section class="sec" id="harmonogram">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">03 / Harmonogram</span>
+        <h2>Rajd <em>godzina</em> po godzinie</h2>
+      </div>
+      <p>
+        Piątek otwiera start honorowy i prolog miejski, sobota to sześć przejazdów,
+        a niedziela — cztery odcinki i meta. Odcinek testowy dostępny jest w czwartek 12 listopada.
+      </p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Dni rajdu">
+      <button class="tab on" role="tab" aria-selected="true" data-day="d1">Piątek<small>13.11</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d2">Sobota<small>14.11</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d3">Niedziela<small>15.11</small></button>
+      <button class="tab" role="tab" aria-selected="false" data-day="d0">Odcinek testowy<small>12.11</small></button>
+    </div>
+
+    <div class="tp on" id="d1">
+      <div class="trow">
+        <div class="trow-t">16:00</div>
+        <div class="trow-c">
+          <h4>Start Honorowy</h4>
+          <p>Uroczyste otwarcie rajdu w centrum Dzierżoniowa.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Rynek%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Rynek w Dzierżoniowie
+          </a>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">19:00</div>
+        <div class="trow-c">
+          <h4>Prolog Miasto</h4>
+          <p>Przejazd pokazowy dla kibiców — nieliczony do klasyfikacji generalnej.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Synagoga%2C%20ul.%20Krasickiego%2028%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Start obok Synagogi, ul. Krasickiego 28
+          </a>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">—</div>
+        <div class="trow-c">
+          <h4>Baza rajdu i park serwisowy</h4>
+          <p>Pierwszy dzień rajdu obsługiwany jest z bazy na terenie OSiR-u.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=OSiR%20Dzier%C5%BConi%C3%B3w%2C%20Strumykowa%201" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            OSiR Dzierżoniów, ul. Strumykowa 1
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tp" id="d2">
+      <div class="trow">
+        <div class="trow-t">08:30</div>
+        <div class="trow-c">
+          <h4>OS 1 / 3 / 5 — Różana</h4>
+          <p>3 pętle odcinka ze zmodyfikowanym łącznikiem szutrowym. Start pod Srebrną Górą, zjazd do Piławy Górnej.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=R%C3%B3%C5%BCana%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Rejon startu OS Różana
+          </a>
+          <span class="pill pill--r">12:30 · 15:30</span>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">08:55</div>
+        <div class="trow-c">
+          <h4>OS 2 / 4 / 6 — Jodłownik – Srebrna Góra</h4>
+          <p>Techniczna trasa górska, 3 pętle.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Jod%C5%82ownik%2C%20Srebrna%20G%C3%B3ra" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Jodłownik – Srebrna Góra
+          </a>
+          <span class="pill">12:55 · 15:55</span>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">—</div>
+        <div class="trow-c">
+          <h4>Park serwisowy przy starcie OS Różana</h4>
+          <p>W sobotę baza i serwis przenoszą się bezpośrednio na start odcinka Różana — w rejonie zjazdu ze Srebrnej Góry do Piławy Górnej.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tp" id="d3">
+      <div class="trow">
+        <div class="trow-t">08:30</div>
+        <div class="trow-c">
+          <h4>OS 7 — Kamionki</h4>
+          <p>Podjazd pod Przełęcz Jugowską. Meta przesunięta za szczyt i ostatnie zakręty.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Kamionki%2C%20Prze%C5%82%C4%99cz%20Jugowska" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Kamionki
+          </a>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">08:40</div>
+        <div class="trow-c">
+          <h4>OS 8 — Jugów (Tartak)</h4>
+          <p>Start ok. 100 m za metą OS Kamionki · zjazd w stronę Jugowa.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Jug%C3%B3w%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Jugów (Tartak)
+          </a>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">12:30*</div>
+        <div class="trow-c">
+          <h4>OS 9 — Jugów, odwrotny kierunek</h4>
+          <p>Drugi przejazd w przeciwną stronę: od tartaku w górę do Przełęczy Jugowskiej.</p>
+          <span class="pill pill--g">Przegrupowanie za metą OS Jugów</span>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">12:40*</div>
+        <div class="trow-c">
+          <h4>OS 10 — Kamionki, odwrotny kierunek</h4>
+          <p>Zjazd z przełęczy w dół do Kamionek. Między pętlami nie przewidziano standardowego serwisu — załogi oczekują na przegrupowaniu za metą odcinka Jugów, po czym trasa pokonywana jest w przeciwnym kierunku.</p>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">16:00</div>
+        <div class="trow-c">
+          <h4>Uroczysta Meta Rajdu</h4>
+          <p>Zakończenie rywalizacji i deklaracja zwycięzców.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=Rynek%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            Rynek w Dzierżoniowie
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tp" id="d0">
+      <div class="trow">
+        <div class="trow-t">08:30</div>
+        <div class="trow-c">
+          <h4>Odcinek testowy — start</h4>
+          <p>Test trwa do 13:00, bez limitu przejazdów.</p>
+          <a class="trow-loc" href="https://www.google.com/maps/search/?api=1&query=OSiR%20Dzier%C5%BConi%C3%B3w%2C%20Strumykowa%201" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+            OSiR Dzierżoniów, ul. Strumykowa 1
+          </a>
+        </div>
+      </div>
+      <div class="trow">
+        <div class="trow-t">13:00</div>
+        <div class="trow-c">
+          <h4>Koniec odcinka testowego</h4>
+          <p>Przejazdy testowe dostępne dla wszystkich zgłoszonych załóg — opłata 350 zł.</p>
+          <span class="pill">350 zł</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ KLASY ══════════ -->
+<section class="sec band" id="klasy" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">04 / Klasy</span>
+        <h2>Czternaście <em>klas</em></h2>
+      </div>
+      <p>
+        Samochody dopuszczone do startu muszą posiadać klatkę bezpieczeństwa zgodną z Załącznikiem J
+        oraz fotele kubełkowe. Rywalizacja toczy się w 14 klasach.
+      </p>
+    </div>
+
+    <div class="cls-filter" id="clsFilter">
+      <button class="fchip on" data-f="all">Wszystkie</button>
+      <button class="fchip" data-f="junior">Junior</button>
+      <button class="fchip" data-f="2wd">Przednie napędy</button>
+      <button class="fchip" data-f="4wd">4x4 i większe</button>
+      <button class="fchip" data-f="rwd">Tylne napędy</button>
+      <button class="fchip" data-f="hist">Historyczne</button>
+      <button class="fchip" data-f="open">Otwarte</button>
+      <button class="fchip" data-f="volvo">Volvo Euro Cup</button>
+    </div>
+
+    <div class="cls-grid" id="clsGrid">
+      <article class="cls rv" data-g="junior">
+        <div class="cls-h"><div class="cls-n">1</div><div class="cls-tag">BGM Junior Cup</div></div>
+        <h4>Klasa 1</h4>
+        <p>Najmłodsza klasa rajdu — pierwszy krok w rajdowe doświadczenie.</p>
+        <ul><li>Toyota Aygo</li><li>Citroën C1</li><li>Peugeot 107</li></ul>
+      </article>
+      <article class="cls rv rv-1" data-g="junior">
+        <div class="cls-h"><div class="cls-n">2</div><div class="cls-tag">Junior+</div></div>
+        <h4>Klasa 2</h4>
+        <p>Klasa dla zweryfikowanych juniorów startujących w zawodach o wyższym wymaganiu technicznym.</p>
+        <div class="cls-note">Regulamin techniczny 2027</div>
+      </article>
+      <article class="cls rv rv-2" data-g="2wd">
+        <div class="cls-h"><div class="cls-n">3</div><div class="cls-tag">do 1400 ccm</div></div>
+        <h4>Klasa 3</h4>
+        <p>Pojemność silnika do 1400 ccm.</p>
+      </article>
+      <article class="cls rv rv-3" data-g="2wd">
+        <div class="cls-h"><div class="cls-n">4</div><div class="cls-tag">do 1248 ccm</div></div>
+        <h4>Klasa 4</h4>
+        <p>Fiat Cinquecento / Seicento do 1248 ccm.</p>
+      </article>
+      <article class="cls rv" data-g="2wd">
+        <div class="cls-h"><div class="cls-n">5</div><div class="cls-tag">do 1600 ccm</div></div>
+        <h4>Klasa 5</h4>
+        <p>Peugeot 106, Peugeot 206, Citroën C2, Citroën Saxo do 1600 ccm.</p>
+        <div class="cls-note">Zakaz skrzyni sekwencyjnej</div>
+      </article>
+      <article class="cls rv rv-1" data-g="2wd">
+        <div class="cls-h"><div class="cls-n">6</div><div class="cls-tag">1401 – 1600 ccm</div></div>
+        <h4>Klasa 6</h4>
+        <p>Od 1401 ccm do 1600 ccm.</p>
+      </article>
+      <article class="cls rv rv-2" data-g="2wd">
+        <div class="cls-h"><div class="cls-n">7</div><div class="cls-tag">1601 – 2000 ccm</div></div>
+        <h4>Klasa 7</h4>
+        <p>Od 1601 ccm do 2000 ccm, w tym auta TDI do 2000 ccm 2WD oraz benzynowe turbo do 1600 ccm 2WD.</p>
+        <div class="cls-note">Jedna z najliczniejszych klas</div>
+      </article>
+      <article class="cls rv rv-3" data-g="4wd">
+        <div class="cls-h"><div class="cls-n">8</div><div class="cls-tag">powyżej 2000 ccm</div></div>
+        <h4>Klasa 8</h4>
+        <p>Powyżej 2000 ccm oraz auta doładowane powyżej 1601 ccm. Przelicznik turbo: 1,25 dla benzyny, 1,5 dla silników Wankla.</p>
+        <div class="cls-note">Impreza · Lancer Evo · Focus RS</div>
+      </article>
+      <article class="cls rv" data-g="rwd">
+        <div class="cls-h"><div class="cls-n">9</div><div class="cls-tag">RWD do 2000 ccm</div></div>
+        <h4>Klasa 9</h4>
+        <p>Tylnonapędowe do 2000 ccm.</p>
+      </article>
+      <article class="cls rv rv-1" data-g="open">
+        <div class="cls-h"><div class="cls-n">10</div><div class="cls-tag">2WD OPEN</div></div>
+        <h4>Klasa 10</h4>
+        <p>Samochody z napędem na przednią oś w otwartej formule.</p>
+        <div class="cls-note">Największa frekwencja — BMW E36</div>
+      </article>
+      <article class="cls rv rv-2" data-g="hist">
+        <div class="cls-h"><div class="cls-n">11</div><div class="cls-tag">H1</div></div>
+        <h4>Klasa 11</h4>
+        <p>Samochody historyczne wyprodukowane do 1989 r., z zachowaniem oryginalnego bloku silnika.</p>
+        <div class="cls-note">H1 — do 1400 ccm</div>
+      </article>
+      <article class="cls rv rv-3" data-g="hist">
+        <div class="cls-h"><div class="cls-n">12</div><div class="cls-tag">H2</div></div>
+        <h4>Klasa 12</h4>
+        <p>Samochody historyczne wyprodukowane do 1989 r., z zachowaniem oryginalnego bloku silnika.</p>
+        <div class="cls-note">H2 — powyżej 1401 ccm, wraz z 4x4 bez turbo</div>
+      </article>
+      <article class="cls rv" data-g="open">
+        <div class="cls-h"><div class="cls-n">13</div><div class="cls-tag">Pokazowa</div></div>
+        <h4>Klasa 13 (P)</h4>
+        <p>Przejazdy bez pomiaru czasu lub treningowe w warunkach bojowych.</p>
+      </article>
+      <article class="cls rv rv-1" data-g="volvo">
+        <div class="cls-h"><div class="cls-n">14</div><div class="cls-tag">Volvo Euro Cup</div></div>
+        <h4>Klasa 14</h4>
+        <p>Puchar markowy dla wszystkich modeli Volvo — runda północnoeuropejskiego pucharu w ramach rajdu.</p>
+        <div class="cls-note">940 · PV544 · P1800 · 240 · 740</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VOLVO EURO CUP ══════════ -->
+<section class="sec vc" id="eurocup">
+  <div class="wrap vc-in">
+    <div class="rv rv-l">
+      <span class="tag tag--y">Runda specjalna</span>
+      <h2>Volvo<br>Euro Cup</h2>
+      <p>
+        GoAudit 11 to jedna z rund północnoeuropejskiego pucharu Volvo Euro Cup.
+        Do klasy 14 zgłosiło się <b>11 skandynawskich załóg</b> w tylnonapędowych rajdówkach Volvo —
+        głównie w modelach Volvo 940, ale pojawią się też klasyczne modele PV544, P1800, 240 oraz 740.
+      </p>
+      <div class="vc-models">
+        <span>Volvo 940</span><span>Volvo PV544</span><span>Volvo P1800</span>
+        <span>Volvo 240</span><span>Volvo 740</span>
+      </div>
+      <div class="vc-count">
+        <b data-count="11">0</b>
+        <span>skandynawskich załóg<br>w klasie 14</span>
+      </div>
+    </div>
+    <div class="vc-photos rv rv-r">
+      <figure><img src="assets/img/eurocup-blue.webp" alt="Rajdówka Volvo w barwach niebieskich na tle nieba" loading="lazy"></figure>
+      <figure><img src="assets/img/eurocup-sevius.webp" alt="Rajdówka Volvo z napisem Sevius na szybie" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ LISTA STARTOWA ══════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">05 / Lista startowa</span>
+        <h2>Blisko 90 załóg<br>i ciekawi <em>goście</em></h2>
+      </div>
+      <p>
+        Na liście startowej znajduje się już blisko 90 załóg z Polski i zagranicy.
+        Największa frekwencja panuje w klasie 10, klasie 8 oraz klasie 7.
+      </p>
+    </div>
+
+    <div class="duo">
+      <article class="star rv">
+        <div class="star-photo">
+          <span class="star-flag">Klasa pokazowa</span>
+          <img src="assets/img/hero-940-dust.webp" alt="Volvo 940 w chmurze kurzu na szutrowym odcinku" loading="lazy">
+        </div>
+        <div class="star-body">
+          <h3>Zbigniew Gabryś</h3>
+          <span class="star-role">Škoda Fabia RS Rally2 · pilot Adrian Sadowski</span>
+          <p>Swój udział za kierownicą Škody Fabii RS Rally2 zapowiedział Zbigniew Gabryś — wystartuje w klasie pokazowej.</p>
+          <div class="star-tags"><span>Rally2</span><span>Klasa 13 (P)</span></div>
+        </div>
+      </article>
+
+      <article class="star rv rv-1">
+        <div class="star-photo">
+          <span class="star-flag b">Klasa 8 · na czas</span>
+          <img src="assets/img/sweden-porsche.webp" alt="Biały samochód rajdowy w barwach narodowych Szwecji na kamienistym odcinku" loading="lazy">
+        </div>
+        <div class="star-body">
+          <h3>Adrian Wichłacz<br>&amp; Błażej Szulc</h3>
+          <span class="star-role">Škoda Fabia Rally2 Evo</span>
+          <p>W walce na czas w klasie 8 wystartują Adrian Wichłacz i Błażej Szulc — za kierownicą Škody Fabii Rally2 Evo.</p>
+          <div class="star-tags"><span>Rally2</span><span>Klasa 8</span><span>Na czas</span></div>
+        </div>
+      </article>
+
+      <article class="star rv rv-2">
+        <div class="star-photo">
+          <span class="star-flag g">Klasa 14</span>
+          <img src="assets/img/eurocup-sevius.webp" alt="Niebieski Volvo rajdowy z napisem Sevius na szybie" loading="lazy">
+        </div>
+        <div class="star-body">
+          <h3>Desant ze Skandynawii</h3>
+          <span class="star-role">11 załóg · Volvo Euro Cup</span>
+          <p>Do klasy 14 zgłosiło się 11 skandynawskich załóg w tylnonapędowych rajdówkach Volvo — głównie w modelach Volvo 940, ale także PV544, P1800, 240 i 740.</p>
+          <div class="star-tags"><span>Volvo 940</span><span>PV544</span><span>P1800</span><span>240</span><span>740</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="stat-grid rv rv-3" style="margin-top:0">
+      <div class="stat"><b>10</b><span>klasa 10 — zdominowana przez BMW E36</span></div>
+      <div class="stat"><b>8</b><span>klasa 8 — Impreza, Lancer Evo, Focus RS</span></div>
+      <div class="stat"><b>7</b><span>klasa 7 — Clio i Peugeoty 206</span></div>
+      <div class="stat"><b>120</b><span>limit zgłoszeń</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BAZA ══════════ -->
+<section class="sec band" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">06 / Baza i serwis</span>
+        <h2>Gdzie <em>szukać</em> załóg</h2>
+      </div>
+      <p>
+        Baza rajdu zmienia się z dnia na dzień — od OSiR-u, przez start odcinka Różana,
+        po przegrupowanie za metą OS Jugów.
+      </p>
+    </div>
+
+    <div class="bases">
+      <div class="base rv">
+        <span class="base-w">Piątek · 13.11</span>
+        <h4>OSiR Dzierżoniów</h4>
+        <p>Baza rajdu i park serwisowy pierwszego dnia. Otwarcie bazy, odprawa załóg i przygotowanie sprzętu na trzy dni rywalizacji.</p>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=OSiR%20Dzier%C5%BConi%C3%B3w%2C%20Strumykowa%201" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+          ul. Strumykowa 1
+        </a>
+      </div>
+      <div class="base rv rv-1">
+        <span class="base-w">Sobota · 14.11</span>
+        <h4>Start OS Różana</h4>
+        <p>Park serwisowy bezpośrednio przy starcie odcinka Różana — w rejonie zjazdu ze Srebrnej Góry do Piławy Górnej.</p>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=R%C3%B3%C5%BCana%2C%20Srebrna%20G%C3%B3ra%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+          Rejon zjazdu ze Srebrnej Góry
+        </a>
+      </div>
+      <div class="base rv rv-2">
+        <span class="base-w">Niedziela · 15.11</span>
+        <h4>Bez standardowego serwisu</h4>
+        <p>Między pętlami nie przewidziano standardowego serwisu — załogi oczekują na przegrupowaniu za metą odcinka Jugów, po czym trasa pokonywana jest w przeciwnym kierunku.</p>
+        <a class="gmap" href="https://www.google.com/maps/search/?api=1&query=Jug%C3%B3w%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-6.4 7-11a7 7 0 1 0-14 0c0 4.6 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+          Przegrupowanie za metą OS Jugów
+        </a>
+      </div>
+      <div class="base rv rv-3">
+        <span class="base-w">Organizator</span>
+        <h4>BGM Sport</h4>
+        <p>Rajd GoAudit 11 organizuje BGM Sport (Szymon Mazur) we współpracy z OSiR Dzierżoniów. Zapisy załóg prowadzone są przez bgmsport.pl.</p>
+        <a class="gmap" href="https://bgmsport.pl" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
+          bgmsport.pl
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WPISOWE ══════════ -->
+<section class="sec" id="zapis">
+  <div class="wrap entry">
+    <div class="price rv rv-l">
+      <span class="price-lab">I termin · do 5 listopada</span>
+      <div class="price-amt"><b>2100</b><i>zł</i></div>
+      <p class="price-note">lub 512 €</p>
+      <ul class="price-list">
+        <li><span><b>Limit 120 załóg</b> — zapisy przez bgmsport.pl</span></li>
+        <li><span>Na liście startowej jest już <b>blisko 90 załóg</b> z Polski i zagranicy</span></li>
+        <li><span>Odcinek testowy: <b>12 listopada</b>, 08:30–13:00, bez limitu przejazdów</span></li>
+        <li><span>Opłata za odcinek testowy: <b>350 zł</b></span></li>
+        <li><span>Klatka bezpieczeństwa zgodna z <b>Załącznikiem J</b> oraz <b>fotele kubełkowe</b></span></li>
+        <li><span>Runda <b>Volvo Euro Cup</b> w klasie 14</span></li>
+      </ul>
+      <a class="btn btn--y" href="https://bgmsport.pl" target="_blank" rel="noopener"><span>Zapisz się przez bgmsport.pl</span></a>
+    </div>
+
+    <div class="entry-side rv rv-r">
+      <span class="shead-no">07 / Zapisy</span>
+      <h2>Zajmij numer startowy<br><em>zanim zniknie</em></h2>
+      <p>
+        Limit 120 załóg, wpisowe w I terminie do 5 listopada. Po tym terminie wpłata może zostać
+        podwyższona, a miejsca rozchodzą się w kolejności zgłoszeń.
+      </p>
+
+      <div class="meter">
+        <div class="meter-bar"><i id="meterFill" data-pct="75"></i></div>
+        <div class="meter-meta"><span>Zapisane <b>blisko 90</b></span><span>Limit <b>120</b></span></div>
+      </div>
+
+      <div class="notice">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div>Koniec terminu I wpłaty wpisowego: <b>5 listopada 2026</b> · do końca terminu zostało</div>
+      </div>
+      <div class="cd" id="cd2">
+        <div class="cd-c"><b data-cd="d">00</b><span>dni</span></div>
+        <div class="cd-c"><b data-cd="h">00</b><span>godzin</span></div>
+        <div class="cd-c"><b data-cd="m">00</b><span>minut</span></div>
+        <div class="cd-c"><b data-cd="s">00</b><span>sekund</span></div>
+      </div>
+
+      <div style="margin-top:26px;display:flex;flex-wrap:wrap;gap:14px">
+        <a class="btn btn--red" href="https://bgmsport.pl" target="_blank" rel="noopener"><span>bgmsport.pl</span></a>
+        <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&query=OSiR%20Dzier%C5%BConi%C3%B3w%2C%20Strumykowa%201" target="_blank" rel="noopener"><span>Baza rajdu</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALERIA ══════════ -->
+<section class="sec band" id="galeria" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">08 / Galeria</span>
+        <h2>Rajdowe <em>kadry</em></h2>
+      </div>
+      <p>Kliknij zdjęcie, aby powiększyć. Nawiguj strzałkami na klawiaturze.</p>
+    </div>
+
+    <div class="gal" id="gal">
+      <figure class="g" data-src="assets/img/hero-940-dust.webp" data-cap="Volvo 940 w chmurze kurzu">
+        <img src="assets/img/hero-940-dust.webp" alt="Volvo 940 zakryty chmurą kurzu" loading="lazy">
+        <figcaption>Volvo 940 w chmurze kurzu</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/plakat.webp" data-cap="Oficjalny plakat Rajdu Wikinga GoAudit 11">
+        <img src="assets/img/plakat-sm.webp" alt="Plakat rajdu GoAudit 11" loading="lazy">
+        <figcaption>Oficjalny plakat</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/skok-940.webp" data-cap="Volvo 940 w locie nad przeszkodą">
+        <img src="assets/img/skok-940.webp" alt="Volvo 940 w skoku" loading="lazy">
+        <figcaption>940 w locie</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/klasyk-242-start.webp" data-cap="Volvo 242 na starcie rajdu">
+        <img src="assets/img/klasyk-242-start.webp" alt="Klasyczny Volvo na starcie" loading="lazy">
+        <figcaption>242 na starcie</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/czerwony-740-laweta.webp" data-cap="Czerwony Volvo 740 na lawetie">
+        <img src="assets/img/czerwony-740-laweta.webp" alt="Czerwony Volvo na lawetie" loading="lazy">
+        <figcaption>740 na lawetie</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/czerwony-740-rynek.webp" data-cap="Czerwony Volvo 740 na rynku w Dzierżoniowie">
+        <img src="assets/img/czerwony-740-rynek.webp" alt="Czerwony Volvo na rynku w Dzierżoniowie" loading="lazy">
+        <figcaption>740 na rynku</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/niebieski-244-laweta.webp" data-cap="Niebieski Volvo 244 w drodze">
+        <img src="assets/img/niebieski-244-laweta.webp" alt="Niebieski Volvo 244" loading="lazy">
+        <figcaption>244 w trasie</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/transport.webp" data-cap="Transport rajdowy — Volvo na lawetach">
+        <img src="assets/img/transport.webp" alt="Volvo na lawetach podczas transportu" loading="lazy">
+        <figcaption>Transport rajdowy</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/warsztat.webp" data-cap="Warsztat — budowa rajdówki">
+        <img src="assets/img/warsztat.webp" alt="Mechanicy w warsztacie przy budowie samochodu" loading="lazy">
+        <figcaption>Warsztat</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/zalgowa-czerwony.webp" data-cap="Załoga przy czerwonym Volvo">
+        <img src="assets/img/zalgowa-czerwony.webp" alt="Załoga przy czerwonym Volvo" loading="lazy">
+        <figcaption>Załoga</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/czerwony-480-muzeum.webp" data-cap="Czerwone Volvo 480">
+        <img src="assets/img/czerwony-480-muzeum.webp" alt="Czerwone Volvo 480 w hali" loading="lazy">
+        <figcaption>480 w hali</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/volvo-badge.webp" data-cap="Emblemat Volvo">
+        <img src="assets/img/volvo-badge.webp" alt="Emblemat Volvo na czerwonym tle" loading="lazy">
+        <figcaption>Emblemat Volvo</figcaption>
+      </figure>
+      <figure class="g" data-src="assets/img/eurocup-sevius.webp" data-cap="Volvo w barwach Volvo Euro Cup">
+        <img src="assets/img/eurocup-sevius.webp" alt="Rajdówka Volvo w barwach drużyny" loading="lazy">
+        <figcaption>Volvo Euro Cup</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="shead">
+      <div>
+        <span class="shead-no">09 / Pytania</span>
+        <h2>Najczęstsze <em>pytania</em></h2>
+      </div>
+      <p>Wszystko, co warto wiedzieć przed startem.</p>
+    </div>
+
+    <div class="faq">
+      <details class="qa"><summary>Kto może zgłosić się do rajdu?</summary>
+        <p>W rywalizacji mogą startować załogi z Polski i zagranicy w jednej z 14 klas. Samochody muszą posiadać klatkę bezpieczeństwa zgodną z Załącznikiem J oraz fotele kubełkowe. Listę startową tworzą zgłoszenia przyjęte w kolejności do wyczerpania limitu 120 załóg.</p></details>
+      <details class="qa"><summary>Jak wygląda opłata i termin zgłoszeń?</summary>
+        <p>Wpisowe w I terminie, do 5 listopada 2026, wynosi 2100 zł (512 €). Zapisy przyjmuje BGM Sport przez bgmsport.pl. Opcjonalnie można przystąpić do odcinka testowego w czwartek 12 listopada w godzinach 08:30–13:00, bez limitu przejazdów, za 350 zł.</p></details>
+      <details class="qa"><summary>Gdzie znajduje się baza i serwis?</summary>
+        <p>W piątek baza i park serwisowy znajdują się na terenie OSiR-u przy ul. Strumykowej 1 w Dzierżoniowie. W sobotę serwis przenosi się bezpośrednio na start odcinka Różana, w rejonie zjazdu ze Srebrnej Góry do Piławy Górnej. W niedzielę między pętlami nie przewidziano standardowego serwisu.</p></details>
+      <details class="qa"><summary>Czy warto przyjechać jako kibic?</summary>
+        <p>Tak — start honorowy o 16:00 oraz prolog miejski o 19:00 odbywają się na rynku w Dzierżoniowie i przy ul. Krasickiego 28. Uroczysta meta rajdu zaplanowana jest na 16:00 w niedzielę, również na rynku.</p></details>
+      <details class="qa"><summary>Co oznacza klasa Volvo Euro Cup?</summary>
+        <p>Klasa 14 jest rundą północnoeuropejskiego pucharu Volvo Euro Cup w ramach rajdu. Jest przeznaczona dla wszystkich modeli Volvo — w tegorocznej edycji w starcie zgłosiło się 11 skandynawskich załóg, głównie w modelach Volvo 940, ale także PV544, P1800, 240 i 740.</p></details>
+      <details class="qa"><summary>Czy harmonogram jest ostateczny?</summary>
+        <p>Podane godziny oznaczają start pierwszej załogi, a odstęp startowy wynosi 1 minutę. Harmonogram może ulec zmianie, dlatego godziny oznaczone gwiazdką (OS 9 i OS 10) są orientacyjne.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA ══════════ -->
+<section class="finale">
+  <span class="finale-num" aria-hidden="true">11</span>
+  <div class="wrap finale-in">
+    <h2>Do zobaczenia<br>na <em>Jodłowniku</em></h2>
+    <p>13–15 listopada 2026 · Dzierżoniów i Góry Sowie · ponad 100 kilometrów odcinków specjalnych.</p>
+    <div class="hero-btns">
+      <a class="btn btn--y" href="https://bgmsport.pl" target="_blank" rel="noopener"><span>Zapisz załogę</span></a>
+      <a class="btn btn--ghost" style="color:var(--paper);border-color:var(--paper);box-shadow:6px 6px 0 var(--ink)" href="#harmonogram"><span>Harmonogram</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STOPKA ══════════ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <div class="brand" style="border:0;padding:0;margin-bottom:14px">
+          <b style="color:var(--paper)">GoAudit</b><i>11</i>
+        </div>
+        <p>Rajd Wikinga — impreza kończąca sezon rajdowy w regionie. 13–15 listopada 2026 w Dzierżoniowie i na Górach Sowich.</p>
+        <p>Organizator: BGM Sport (Szymon Mazur) we współpracy z OSiR Dzierżoniów, ul. Strumykowa 1.</p>
+      </div>
+      <div>
+        <h5>Rajd</h5>
+        <ul>
+          <li><a href="#impreza">Impreza</a></li>
+          <li><a href="#trasa">Trasa i OS</a></li>
+          <li><a href="#harmonogram">Harmonogram</a></li>
+          <li><a href="#klasy">Klasy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Start</h5>
+        <ul>
+          <li><a href="https://bgmsport.pl" target="_blank" rel="noopener">Zapisy — bgmsport.pl</a></li>
+          <li><a href="#zapis">Wpisowe i limit</a></li>
+          <li><a href="#eurocup">Volvo Euro Cup</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Miejsca</h5>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=OSiR%20Dzier%C5%BConi%C3%B3w%2C%20Strumykowa%201" target="_blank" rel="noopener">Baza — OSiR</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Rynek%2C%20Dzier%C5%BConi%C3%B3w" target="_blank" rel="noopener">Start — Rynek</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Prze%C5%82%C4%99cz%20Jugowska" target="_blank" rel="noopener">Przełęcz Jugowska</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Srebrna%20G%C3%B3ra" target="_blank" rel="noopener">Srebrna Góra</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 GoAudit 11 · Rajd Wikinga</span>
+      <span>13–15 listopada 2026 · Dzierżoniów</span>
+      <span>Strona informacyjna — harmonogram może ulec zmianie</span>
+    </div>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button class="lb-x" id="lbX" aria-label="Zamknij">×</button>
+  <button class="lb-n p" id="lbP" aria-label="Poprzednie">‹</button>
+  <button class="lb-n n" id="lbN" aria-label="Następne">›</button>
+  <div class="lb-in">
+    <img id="lbImg" src="" alt="">
+    <div class="lb-cap" id="lbCap"></div>
+  </div>
+</div>
+
+<!-- sticky CTA -->
+<div class="stick" id="stick">
+  <p><b>GoAudit 11 · Rajd Wikinga</b>13–15.11.2026 · Dzierżoniów</p>
+  <a class="btn btn--y btn--sm" href="#zapis"><span>Zapisz się</span></a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var $=function(s,c){return (c||document).querySelector(s)};
+  var $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ── MENU ───────────────────────────────────────── */
+  var burger=$('#burger');
+  burger.addEventListener('click',function(){
+    var open=document.body.classList.toggle('menu');
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  $$('#navLinks a').forEach(function(a){
+    a.addEventListener('click',function(){document.body.classList.remove('menu')});
+  });
+
+  /* ── TICKER ─────────────────────────────────────── */
+  var items=[
+    '<b>100+</b> km odcinków specjalnych','<b>3</b> dni rajdu','<b>120</b> limit załóg',
+    '<b>14</b> klas startowych','runda <b>Volvo Euro Cup</b>','<b>13–15</b> listopada 2026',
+    'Dzierżoniów <b>i</b> Góry Sowie','<b>10</b> odcinków specjalnych',
+    'odcinek testowy <b>12.11</b>','wpisowe <b>2100 zł</b>'
+  ];
+  var html='';
+  for(var r=0;r<2;r++) items.forEach(function(t){html+='<span>'+t+'</span>'});
+  $('#tk').innerHTML=html;
+
+  /* ── REVEAL ─────────────────────────────────────── */
+  var revs=$$('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{threshold:.1,rootMargin:'0px 0px -6% 0px'});
+    revs.forEach(function(el){io.observe(el)});
+  }else{ revs.forEach(function(el){el.classList.add('in')}); }
+
+  /* ── LICZNIKI ───────────────────────────────────── */
+  function animate(el){
+    var target=parseFloat(el.getAttribute('data-count'))||0;
+    var suf=el.getAttribute('data-suffix')||'';
+    if(reduced){el.textContent=target+suf;return}
+    var t0=null;
+    function step(ts){
+      if(!t0)t0=ts;
+      var p=Math.min((ts-t0)/1300,1), e=1-Math.pow(1-p,3);
+      el.textContent=Math.round(target*e)+suf;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var cnts=$$('[data-count]');
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ animate(e.target); io2.unobserve(e.target); } });
+    },{threshold:.5});
+    cnts.forEach(function(el){io2.observe(el)});
+  }else{ cnts.forEach(animate); }
+
+  /* ── PASEK ZGŁOSZEŃ ─────────────────────────────── */
+  var mf=$('#meterFill');
+  function fill(){ if(mf) mf.style.width=(mf.getAttribute('data-pct')||0)+'%'; }
+  if(mf && 'IntersectionObserver' in window){
+    var io3=new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ fill(); io3.unobserve(e.target); } });
+    },{threshold:.4});
+    io3.observe(mf);
+  }else{ fill(); }
+
+  /* ── COUNTDOWN ──────────────────────────────────── */
+  function pad(n){return (n<10?'0':'')+n}
+  var DEADLINE=new Date(2026,10,5,23,59,59);
+  function tick(){
+    var d=DEADLINE-new Date(); if(d<0)d=0;
+    var map={d:pad(Math.floor(d/86400000)),h:pad(Math.floor(d%86400000/3600000)),
+             m:pad(Math.floor(d%3600000/60000)),s:pad(Math.floor(d%60000/1000))};
+    $$('#cd2 [data-cd]').forEach(function(el){ el.textContent=map[el.getAttribute('data-cd')]; });
+  }
+  tick(); setInterval(tick,1000);
+
+  /* ── ZAKŁADKI ───────────────────────────────────── */
+  $$('.tab').forEach(function(t){
+    t.addEventListener('click',function(){
+      $$('.tab').forEach(function(x){x.classList.remove('on');x.setAttribute('aria-selected','false')});
+      t.classList.add('on'); t.setAttribute('aria-selected','true');
+      $$('.tp').forEach(function(p){p.classList.remove('on')});
+      var panel=$('#'+t.getAttribute('data-day'));
+      if(panel) panel.classList.add('on');
+    });
+  });
+
+  /* ── FILTR KLAS ─────────────────────────────────── */
+  var chips=$$('#clsFilter .fchip'), cls=$$('#clsGrid .cls');
+  chips.forEach(function(ch){
+    ch.addEventListener('click',function(){
+      chips.forEach(function(c){c.classList.remove('on')});
+      ch.classList.add('on');
+      var f=ch.getAttribute('data-f');
+      cls.forEach(function(c){
+        c.style.display=(f==='all'||c.getAttribute('data-g')===f)?'':'none';
+      });
+    });
+  });
+
+  /* ── MAPA: PODŚWIETLENIE ────────────────────────── */
+  var osEls=$$('.osrow'), paths=$$('.os-p'), nodes=$$('.mn');
+  function hl(n){
+    osEls.forEach(function(o){ o.style.background=(o.getAttribute('data-os')===String(n))?'var(--red)':''; });
+    paths.forEach(function(p){ p.style.opacity=(p.getAttribute('data-os')===String(n)||p.getAttribute('data-os')==='10')?'1':'.2'; });
+    nodes.forEach(function(v){ v.style.opacity=(v.getAttribute('data-os')===String(n))?'1':'.4'; });
+  }
+  osEls.forEach(function(o){
+    o.addEventListener('mouseenter',function(){hl(o.getAttribute('data-os'))});
+    o.addEventListener('mouseleave',function(){hl(null)});
+  });
+  nodes.forEach(function(v){
+    v.addEventListener('mouseenter',function(){hl(v.getAttribute('data-os'))});
+    v.addEventListener('mouseleave',function(){hl(null)});
+  });
+
+  /* ── RYSOWANIE ŚCIEŻEK ──────────────────────────── */
+  var ps=$$('.os-p');
+  ps.forEach(function(p){
+    var len=p.getTotalLength?p.getTotalLength():0;
+    if(!len)return;
+    p.style.strokeDasharray=len; p.style.strokeDashoffset=len;
+    p.style.transition='stroke-dashoffset 1.4s cubic-bezier(.2,.9,.3,1)';
+  });
+  function draw(){ ps.forEach(function(p,i){ setTimeout(function(){p.style.strokeDashoffset='0'}, i*140); }); }
+  var mapEl=$('.map');
+  if(mapEl && 'IntersectionObserver' in window){
+    var io4=new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ draw(); io4.unobserve(e.target); } });
+    },{threshold:.2});
+    io4.observe(mapEl);
+  }else{ draw(); }
+
+  /* ── LIGHTBOX ───────────────────────────────────── */
+  var lb=$('#lb'), lbImg=$('#lbImg'), lbCap=$('#lbCap');
+  var figs=$$('#gal .g'), cur=0;
+  function open(i){
+    cur=(i+figs.length)%figs.length;
+    var f=figs[cur];
+    lbImg.src=f.getAttribute('data-src');
+    lbImg.alt=f.getAttribute('data-cap')||'';
+    lbCap.textContent=f.getAttribute('data-cap')||'';
+    lb.classList.add('on');
+    document.body.style.overflow='hidden';
+  }
+  function close(){ lb.classList.remove('on'); document.body.style.overflow=''; }
+  figs.forEach(function(f,i){ f.addEventListener('click',function(){open(i)}) });
+  $('#lbX').addEventListener('click',close);
+  $('#lbP').addEventListener('click',function(e){e.stopPropagation();open(cur-1)});
+  $('#lbN').addEventListener('click',function(e){e.stopPropagation();open(cur+1)});
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('on'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')open(cur-1);
+    if(e.key==='ArrowRight')open(cur+1);
+  });
+
+  /* ── STICKY ─────────────────────────────────────── */
+  var stick=$('#stick');
+  function st(){
+    var y=window.pageYOffset;
+    stick.classList.toggle('on', y>window.innerHeight*0.85 && y<(document.body.scrollHeight-window.innerHeight*1.5));
+  }
+  window.addEventListener('scroll',st,{passive:true});
+  st();
+
+  /* ── AKTYWNA NAV ────────────────────────────────── */
+  var navA=$$('#navLinks a');
+  var secs=navA.map(function(a){return $(a.getAttribute('href'))}).filter(Boolean);
+  if('IntersectionObserver' in window && secs.length){
+    var io5=new IntersectionObserver(function(en){
+      en.forEach(function(e){
+        if(e.isIntersecting){
+          navA.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+e.target.id); });
+        }
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(s){io5.observe(s)});
+  }
+})();
+</script>
+
+
+<div class="vbar">
+  <div class="vbar-in">
+    <span class="vbar-l">Warianty strony</span>
+    <a class="on" href="wariant-03-plakatowy.html">Wariant 03 · Plakatowy</a>
+    <a href="wariant-01-ciemny.html">Ciemny</a>
+    <a href="wariant-02-kreskowy.html">Plakatowy</a>
+    <span class="vbar-h">GoAudit 11 · Rajd Wikinga · 13–15.11.2026</span>
+  </div>
+</div>
+
+</body>
+</html>
